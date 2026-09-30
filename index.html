@@ -297,7 +297,7 @@ const sfx = {
 
 // ---------- 游戏状态 ----------
 let state = "menu";      // menu | playing | paused | stageclear | gameover
-let map = [];
+let map = Array.from({ length: ROWS }, () => Array(COLS).fill(EMPTY));
 let player = null;
 let enemies = [];
 let bullets = [];
